@@ -29,6 +29,10 @@ public class Cart {
         lineItems.put(product.id(), new CartLineItem(product, quantity));
     }
 
+    public CustomerId id() {
+        return id;
+    }
+
     public List<CartLineItem> lineItems() {
         return List.copyOf(lineItems.values());
     }

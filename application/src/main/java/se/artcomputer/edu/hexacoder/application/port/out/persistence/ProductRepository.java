@@ -10,5 +10,7 @@ public interface ProductRepository {
 
   List<Product> findByNameOrDescription(String query);
 
-  Optional<Product> findById(ProductId productId);
+    void save(Product product);
+
+    Optional<Product> findById(ProductId productId);
 }
